@@ -1,6 +1,8 @@
 body {
-    font-family: 'Spoqa Han Sans Neo';
     background: #F2F2F2;
+    color: #767676;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
     margin: 0;
 }
 
@@ -35,7 +37,8 @@ p {
 
 .btnLogin {
     background: #2F80ED;
-    padding: 17px 189px 15px 190px;
+    width: 100%;
+    padding: 17px 0 15px 0;
     margin-top: 32px;
     border: none;
     border-radius: 5px;
@@ -44,4 +47,116 @@ p {
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
+}
+
+/* 모달 */
+.modalBox {
+    background: #FFFFFF;
+    width: 520px;
+    padding: 19px 23px 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.text_loginOrSignUp {
+    padding-bottom: 18px;
+    margin: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.text_loginOrSignUp:before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 0;
+    background-color: #C4C4C4;;
+    width: 100%;
+    height: 1px;
+}
+
+.text_solveCuriosity {
+    margin: 26px 0 24px;
+    color: #000;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+#password {
+    margin: 10px 0 16px;
+}
+
+.btnLogin.modalLogin {
+    padding: 14px 0;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.div_signUpFind {
+    text-align: center;
+}
+.div_signUpFind > a {
+    color: #767676;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 18px;
+}
+
+.a_signUp {
+    margin-right: 28px;
+}
+
+.ssoLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    color: #767676;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+.btn.btnF {
+    border-color: #2D9CDB;
+}
+.btn.btnN {
+    border-color: #00BF18;
+}
+.btn.btnK {
+    border-color: #F2C94C;
 }
